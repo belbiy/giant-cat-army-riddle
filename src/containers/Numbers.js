@@ -8,8 +8,7 @@ const style = {
   margin: '10px 0',
   zIndex: 1,
   padding: '10px',
-  border: '2px solid #333',
-  userSelect: 'none',
+  border: '2px solid #333'
 }
 
 let Numbers = ({ numbers }) => {
