@@ -1,0 +1,48 @@
+:local(.number) {
+  display: block;
+
+  min-width: 70px;
+  text-align: center;
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  font-size: 40px;
+  line-height: 50px;
+  padding: 0;
+  margin: 0;
+
+  transition: all .3s;
+
+}
+
+:local(.error) {
+  color: #cc0000;
+}
+
+:local(.success) {
+  color: #00cc00;
+}
+
+.number-enter {
+  max-height: 0px;
+  opacity: 0.01;
+  transform: translateY(40px);
+}
+.number-enter.number-enter-active {
+  max-height: 50px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.number-exit {
+  max-height: 50px;
+  opacity: 1;
+  transform: translateY(0);
+}
+.number-exit.number-exit-active {
+  max-height: 0px;
+  opacity: 0.01;
+  transform: translateY(40px);
+}

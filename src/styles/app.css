@@ -1,0 +1,107 @@
+html {
+  height: 100%;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 20px;
+  background: #eee;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+p {
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+ul {
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  list-style: disc;
+}
+
+li {
+  margin-bottom: .5rem;
+}
+
+
+
+h1 {
+  font-size: 2.5rem;
+  margin: .5rem 0 1.5rem;
+  font-weight: 600;
+}
+h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+}
+
+a {
+  color: #0c4f72;
+}
+a:hover {
+  color: #cc0000;
+}
+
+.app {
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  margin: 0 auto;
+  padding: 20px 40px;
+  max-width: 1200px;
+}
+
+.game-container {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.game-controls {
+  flex: 1 1 auto;
+  padding-right: 50px;
+}
+.game-rules {
+  flex: 0 0 360px;
+}
+
+.app-footer {
+  opacity: .8;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+
+  body {
+    font-size: 18px;
+  }
+
+  .app {
+    padding: 20px;
+    max-width: 600px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .game-controls {
+    padding: 0;
+  }
+  .game-container {
+    flex-direction: column;
+  }
+}

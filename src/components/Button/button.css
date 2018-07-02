@@ -1,0 +1,76 @@
+:local(.button) {
+  cursor: pointer;
+  display: inline-block;
+  -webkit-appearance: none;
+
+  font-size: 16px;
+  padding: 5px 10px;
+  margin: 0 10px 0 0;
+
+  text-align: center;
+
+  font-weight: 600;
+
+  background: #fff;
+  color: #333;
+
+  transition: all .1s;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:local(.button:hover) {
+  outline: none;
+  background: rgba(0,0,0,.03);
+}
+
+:local(.button:focus) {
+  outline: none;
+  background: rgba(0,0,0,.1);
+}
+
+:local(.button:disabled) {
+  opacity: .3;
+  cursor: default;
+  background: transparent;
+}
+
+
+/* Types */
+
+:local(.primary) {
+  border-radius: 2px;
+  border: 2px solid #333;
+  box-shadow: 0 2px 0 #ccc, 0 4px 0 #333;
+}
+
+:local(.primary:active) {
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+
+:local(.hollow) {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+:local(.hollow:active) {
+  transform: translateY(4px);
+}
+
+
+/* Sizes */
+
+:local(.medium) {
+  font-size: 20px;
+  padding: 8px 15px 10px;
+}
+
+:local(.large) {
+  font-size: 36px;
+  padding: 12px 15px 15px;
+  margin: 0 10px 0 0;
+  min-width: 76px;
+}
