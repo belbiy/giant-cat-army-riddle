@@ -42,9 +42,9 @@ class App extends Component {
 
         <footer className="app-footer">
           Made by <a href="http://belbiy.com">Eugene Bannykh</a>.
-          Riddle by <a href="https://mathforlove.com/who-am-i/dan-finkel/">Dan Finkel</a>.
+          Riddle by <a href="https://mathforlove.com/who-am-i/dan-finkel/">Dan Finkel</a>. <a href="https://github.com/belbiy/giant-cat-army-riddle">Fork me on GitHub</a>.
         </footer>
-        
+
       </div>
     )
   }
