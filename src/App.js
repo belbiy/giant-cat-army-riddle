@@ -8,6 +8,8 @@ import GameRules from './containers/GameRules'
 
 import GameOver from './components/GameOver'
 
+import ShareButtons from './components/ShareButtons'
+
 import './styles/reset.css'
 import './styles/app.css'
 
@@ -22,7 +24,7 @@ class App extends Component {
     return (
       <div className="app">
 
-        <h1>Giant cat army riddle</h1>
+        <h1>Giant cat army riddle <ShareButtons /></h1>
 
         <div className="game-container">
           <div className="game-controls">

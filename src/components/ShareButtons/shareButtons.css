@@ -1,0 +1,16 @@
+:local(.buttons) {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+:local(.button) {
+  display: inline-block;
+  cursor: pointer;
+  opacity: .8;
+  transition: all .2s;
+  margin: 10px 0 10px 10px;
+}
+
+:local(.button:hover) {
+  opacity: 1;
+}
